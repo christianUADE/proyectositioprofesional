@@ -1,0 +1,199 @@
+/* Estilos generales y reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4; /* color de fondo */
+}
+
+/* Ancho del sitio */
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+    overflow: hidden; 
+}
+
+/* Estilos para el logo de la empresa */
+.logo {
+    float: left; 
+    padding: 10px 0; 
+}
+
+.logo .logo-img {
+    width: 400px; 
+    height: auto;
+}
+
+/* Estilos para la navegacion */
+.navigation-menu {
+    float: right; 
+}
+
+.navigation-menu ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-menu li.boton {
+    margin: 0 10px;
+}
+
+.navigation-menu li.boton a.nav-link {
+    text-decoration: none;
+    color: white;
+    background-color: #0091f9;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.navigation-menu li.boton a.nav-link:hover {
+    background-color: #0077cc; 
+}
+
+/* para que el boton de inciio no tenga el fondo azul */
+.home-button a {
+    padding: 0;
+    background-color: transparent;
+}
+
+/* Estilos para el main si es necesario */
+.main {
+    text-align: center; 
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #0091f9;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px; 
+}
+
+/* ancho específico de 1200px */
+@media (min-width: 1201px) {
+    header, footer .footer-content {
+        padding-left: calc((100vw - 1200px) / 2);
+        padding-right: calc((100vw - 1200px) / 2);
+    }
+}
+
+@media (max-width: 1200px) {
+    .logo .logo-img {
+        width: 100%; 
+        max-width: 400px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation-menu ul {
+        flex-direction: column;
+    }
+
+    .navigation-menu li.boton {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+    }
+
+    .rights, .footer-contact {
+        float: none;
+        margin: 10px 0;
+    }
+}
+/* Estilos principales */
+body, html {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezados y texto */
+h2 {
+    color: #0091f9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos generales para los formularios */
+.formulario-contacto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Botón de envío */
+.boton-enviar {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #0091f9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #0077cc;
+}
+
+/* Responde al tamaño de pantalla para los formularios */
+@media (max-width: 768px) {
+    .formulario-contacto {
+        margin: 20px;
+    }
+}
+

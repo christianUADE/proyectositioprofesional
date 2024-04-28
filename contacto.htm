@@ -1,34 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultor de Business Intelligence</title>
-</head>
-<body>
-    <header>
-        <h1>Transformando datos en decisiones</h1>
-        <nav>
-            <ul>
-                <li><a href="mihistoria.htm">Mi historia</a></li>
-                <li><a href="misservicios.htm">Mis servicios</a></li>
-                <li><a href="metodologiadetrabajo.htm">Metodologia de trabajo</a></li>
-                <li><a href="proyectosaclientes.htm">Proyectos a clientes</a></li>
-                <li><a href="contacto.htm">Contacto</a></li>
-                <li><a href="misionvisionyvalores.htm">Mision, vision y valores</a></li>
-            </ul>
-        </nav>
-        
-    </header>
-    <main>
-        <h2>Contacto</h2>
-        <img src="img/Contacto BI.png" alt="Foto de contacto">
-        <p>Telefono (+54 9 11) 5910-6629 </p>       
-    </main>
-
-    <footer>
-
-
-    </footer>
-</body>
-</html>
+<main>
+    <h2>Contacto</h2>
+    <p>Teléfono (+54 9 11) 5910-6629</p>
+    <form action="destino_formulario.php" method="post" class="formulario-contacto">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="boton-enviar">Enviar</button>
+    </form>
+</main>
